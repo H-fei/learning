@@ -1,68 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <title>A Page</title>
-    <style type="text/css">
-        #right{
-            /* float: right; */
-            position: fixed;
-            top: 450px;
-            width: 200px;
-            height:500px;
-            line-height: 500px;
-            text-align: center;
-            border: 1px solid #000;
-            background-color: #FFF;
-            right: 50px; 
-        }
-        </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+	<title>A Page</title>
+	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+	</style>
 </head>
+
 <body>
-    <h1 class="alert alert-info" >Looks like a title</h1>
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Disabled</a>
-        </li>
-        </ul>
-    <nav class="navbar navbar-light bg-light justify-content-between">
-            <a class="navbar-brand">Search in Site</a>
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            </nav>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4">Start Here</h1>
-            <p class="lead">Waiting</p>
-        </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4 m-auto">
-                <!-- <div class="span4 offset4"> -->
-                    <figure>
-                        <img src="7.jpg">
-                    </figure>
-                </div>
-                </div>
-                </div>
-                <div id="right">
-                        <p>need a box here</p>
-                    </div>
-    
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+			aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">
+						Dropdown
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Disabled</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 class="display-4">Start Here</h1>
+			<p class="lead">Waiting</p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9">
+				<!-- <div class="span4 offset4"> -->
+				<figure>
+					<img src="7.jpg">
+				</figure>
+				<p>Conveying meaning to assistive technologies Using color to add meaning only provides a visual indication,
+					which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information
+					denoted by the color is either obvious from the content itself (e.g. the visible text), or is included
+					through alternative means, such as additional text hidden with the .sr-only class.</p>
+				<p>Well done! Aww yeah, you successfully read this important alert message. This example text is going to run
+					a bit longer so that you can see how spacing within an alert works with this kind of content. Whenever
+					you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+				<ul>
+					<li>Be sure you’ve loaded the alert plugin, or the compiled Bootstrap JavaScript.</li>
+					<li>If you’re building our JavaScript from source, it
+						<a href="/docs/4.0/getting-started/javascript/#util">requires
+							<code class="highlighter-rouge">util.js</code>
+						</a>. The compiled version includes this.</li>
+					<li>Add a dismiss button and the
+						<code class="highlighter-rouge">.alert-dismissible</code> class, which adds extra padding to the right of the alert and positions the
+						<code class="highlighter-rouge">.close</code> button.</li>
+					<li>On the dismiss button, add the
+						<code class="highlighter-rouge">data-dismiss="alert"</code> attribute, which triggers the JavaScript functionality. Be sure to use the
+						<code class="highlighter-rouge">&lt;button&gt;</code> element with it for proper behavior across all devices.</li>
+					<li>To animate alerts when dismissing them, be sure to add the
+						<code class="highlighter-rouge">.fade</code> and
+						<code class="highlighter-rouge">.show</code> classes.</li>
+				</ul>
+			</div>
+			<div class="col-lg-3" id="cat" >
+				<!-- <div class="span4 offset4"> -->
+				<figure>
+					<img src="7.jpg">
+				</figure>
+			</div>
+		</div>
+	</div>
 </body>
+
 </html>
